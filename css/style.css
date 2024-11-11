@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin:0;
+    padding:0;
+    color:white;
+    font-family: "Nunito", sans-serif;
+}
+body{
+    height:100vh;
+    
+}
+.container{
+    background-image: linear-gradient(to bottom, #76D259, rgb(43, 41, 41)) ;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+.inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.inicio h1{
+    font-size: 4rem;
+    margin: 10px;
+}
+.inicio p{
+    margin:10px;
+    width:500px;
+    
+}
+.inicio a{
+    color:rgb(255, 255, 0);
+    transition: 1s;
+}
+.inicio a:hover{
+    font-size: 1.1rem;
+}
+.walpapers.container{
+    background-color: #76D259;
+    border-radius: 8px;
+}
+.slider {
+    
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    
+}
+.slider h2{
+    text-align: center;
+    color: white;
+    margin: 2rem 0;
+}
+.mySlides {
+    display: none;
+}
+.mySlides img{
+    width: 100%;
+    height: 300px; /* Defina uma altura fixa */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço */
+    border-radius: 8px;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media  (max-width:550px){
+    .inicio h1{
+        font-size: 2rem;
+        margin: 10px;
+    }
+    .inicio p{
+        margin:10px;
+        width:300px;
+        
+    }
+    .slider {
+    
+        max-width: 300px;
+        position: relative;
+        margin: auto;
+        
+    }
+    .videos video {
+        width: 100%; /* Para que o vídeo ocupe toda a largura do contêiner */
+        max-width: 300px; /* Largura máxima para não ultrapassar o limite desejado */
+        height: 300px; /* Altura fixa para todos os vídeos */
+        object-fit: cover; /* Corta as bordas do vídeo, se necessário, sem distorção */
+        border-radius: 8px; /* Bordas arredondadas (opcional) */
+        margin: 1rem auto; /* Espaçamento entre os vídeos */
+    }
+    .final p{
+        margin: 10px;
+        font-size:.8rem;
+        font-weight: bold;
+        font-style:italic;
+    }
+}
