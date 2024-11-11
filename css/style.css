@@ -87,7 +87,12 @@ body{
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
+.final p{
+    margin: 20px;
+    font-size:1.5rem;
+    font-weight: bold;
+    font-style:italic;
+}
 @media  (max-width:550px){
     .inicio h1{
         font-size: 2rem;
@@ -105,16 +110,14 @@ body{
         margin: auto;
         
     }
-    .videos video {
+     iframe{
         width: 100%; /* Para que o vídeo ocupe toda a largura do contêiner */
         max-width: 300px; /* Largura máxima para não ultrapassar o limite desejado */
         height: 300px; /* Altura fixa para todos os vídeos */
-        object-fit: cover; /* Corta as bordas do vídeo, se necessário, sem distorção */
-        border-radius: 8px; /* Bordas arredondadas (opcional) */
         margin: 1rem auto; /* Espaçamento entre os vídeos */
     }
     .final p{
-        margin: 10px;
+        margin: 20px;
         font-size:.8rem;
         font-weight: bold;
         font-style:italic;
